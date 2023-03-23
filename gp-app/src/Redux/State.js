@@ -30,16 +30,19 @@ let Store = {
     _Coll_Subscriber (){
         console.log('logggg')
     },
-    Add_Post (Post_Message) {
-        let New_Post = {
-            id:5,
-            Post: Post_Message
-        }
-        this._State.Profile_Page.Posts.push(New_Post);
-        this._Coll_Subscriber (this._State);
-    },
+
     Subscribe  (Observer) {
         this._Coll_Subscriber = Observer;
+    },
+    Dispatch (Action) {
+        if (Action.Type ==='ADD-POST'){
+            let New_Post = {
+                id:5,
+                Post: Action.New_Text
+            }
+            this._State.Profile_Page.Posts.push(New_Post);
+            this._Coll_Subscriber (this._State);
+        }
     }
 
 }

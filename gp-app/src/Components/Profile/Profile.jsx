@@ -9,7 +9,7 @@ const Profile = (Props) => {
                 <img src="https://static-cse.canva.com/blob/969480/1600w-HToPSFjwKp0.jpg"/>
             </div>
             <Profile_Info/>
-            <My_Posts Profile_Page ={Props.Profile_Page} Add_Post = {Props.Add_Post} />
+            <My_Posts Profile_Page ={Props.Profile_Page} Dispatch = {Props.Dispatch} />
         </div>
     )
 }

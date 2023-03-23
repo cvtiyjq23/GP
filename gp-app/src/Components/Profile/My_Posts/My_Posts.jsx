@@ -11,7 +11,8 @@ const My_Posts = (Props) => {
     let Add_Post = () => {
 
         let text = New_Post_Element.current.value;
-        Props.Add_Post(text);
+        let Action = {Type: 'ADD-POST', New_Text: text}
+        Props.Dispatch(Action);
     }
 
     return (
