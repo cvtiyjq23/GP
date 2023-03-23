@@ -1,0 +1,11 @@
+.My_Posts_Wrapper{
+    display: grid;
+    grid-gap: 10px;
+    background-color: blue;
+}
+.My_Posts_Header{
+
+}
+.My_Posts{
+
+}

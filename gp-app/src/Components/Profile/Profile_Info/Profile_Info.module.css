@@ -1,0 +1,12 @@
+.Profile_Wrapper{
+display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "Profile_Avatar Profile_Info";
+    background-color: deeppink;
+}
+.Profile_Avatar img{
+    width: 100px;
+}
+.Profile_Info {
+
+}

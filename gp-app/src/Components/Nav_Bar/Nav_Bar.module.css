@@ -1,0 +1,13 @@
+.Nav_Bar {
+    grid-area: nav_bar;
+    background-color: burlywood;
+}
+
+.item {
+
+    color: green;
+}
+
+.active {
+    color: brown;
+}
