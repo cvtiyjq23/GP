@@ -19,7 +19,7 @@ function App(Props) {
             <div className="content_Wrapper">
                 <Routes>
                     <Route path='/profile' element={<Profile Profile_Page ={Props.State.Profile_Page} Dispatch = {Props.Dispatch}/>}/>
-                    <Route path='/dialogs/*' element={<Dialogs Dialogs_Page = {Props.State.Dialogs_Page} Dispatch = {Props.Dispatch} />}/>
+                    <Route path='/dialogs/*' element={<Dialogs Dialogs_Page = {Props.State.Dialogs_Page}  />}/>
                 </Routes>
             </div>
 

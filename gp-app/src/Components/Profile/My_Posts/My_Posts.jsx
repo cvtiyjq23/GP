@@ -1,18 +1,17 @@
 import s from './My_Posts.module.css'
 import Post from "./Post/Post";
 import React from "react";
-import {Add_Post_Action_Creator} from "../../../Redux/State";
-
-
 
 const My_Posts = (Props) => {
 
+    console.log(Props.Profile_Page)
     let Posts_Elements = Props.Profile_Page.Posts.map(
         d => <Post Post_Text={d.Post} Post_Img={d.Img_link}/>);
     let New_Post_Element = React.createRef();
     let Add_Post = () => {
+
         let text = New_Post_Element.current.value;
-        let Action = Add_Post_Action_Creator (text);
+        let Action = {Type: 'ADD-POST', New_Text: text}
         Props.Dispatch(Action);
     }
 
